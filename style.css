@@ -1,0 +1,417 @@
+@charset 'UTF-8';
+/*
+Theme Name: BootPress admin
+Theme URI: http://www.iaowd.com/p-lesson/
+Author: Kenji Natsumoto
+Author URI: http://na2ken.com/
+Description: This is the template of the order to build a Owned Media.
+Version: 0.8.3
+Date: 160701 21:00
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: BootPress admin
+Tags: BootPress,Admin
+*/
+/*-----------------------------------------------------
+* INDEX v.1.1
+2.  LAYOUT (and UI)
+2-2.  l-globalNav
+
+5.  THEME
+5-1.  generalColor
+5-2.  layoutColor
+5-3.  moduleColor
+5-3-1.navbarNavUnit
+5-3-2.socialListUnit
+5-3-3.utilityNavUnit
+5-4.  ColorPlan(Color Pallet)
+5-4-1.backgroundColor
+5-4-2.textColor
+5-5.  textSize
+5-6.  misc
+* ----------------------------------------------------- */
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+}
+
+/*    2-2.  l-globalNav
+ * ------------------------------------------------------ */
+@media screen and (min-width: 1025px) {
+    .l-globalNav {
+        left: 174px;
+    }
+}
+
+/*    5-1.  GeneralColor (textLinkColor)
+ * ------------------------------------------------------ */
+p a:link,
+p a:visited {
+    /* border-bottom:1px dotted; */
+    color: #228985;
+    font-weight: bold;
+    text-decoration: none;
+}
+p a:hover {
+    background: transparent;
+    color: #228985;
+    font-weight: bold;
+    text-decoration: underline;
+}
+p a:active {
+    background: #a8e2df;
+    color: #fff;
+}
+
+h1 a:link,
+h1 a:visited,
+h2 a:link,
+h2 a:visited,
+h3 a:link,
+h3 a:visited {
+    background: transparent;
+    color: #228985;
+    font-weight: normal;
+    text-decoration: none;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover {
+    background: transparent;
+    color: #228985;
+    font-weight: normal;
+    text-decoration: underline;
+}
+/*    5-2.  layoutColor
+ * ------------------------------------------------------ */
+body {
+    color: #312f2e;
+    background: #fff;
+}
+.l-footeBelow {
+    background: #fff;
+}
+.l-cover {
+    background: #fff;
+    color: #312f2e;
+}
+section {
+    background: #fff;
+}
+article section:nth-of-type(2n+0) { //  奇数を指定する場合には2n+1
+  background: #ff0;
+}
+.cat section:nth-of-type(2n+0) { //  奇数を指定する場合には2n+1
+  background: #fff;
+}
+
+section.archiveSection {
+    background: #fff;
+}
+article.archiveArticle {
+    background: #fff;
+}
+.l-footerAbove {
+    background: #fff;
+}
+
+.scroll-top .btn {
+     background: rgba(118, 203, 201, 1); /* #ed4b82! */
+}
+.scroll-top a:link,
+.scroll-top a:visited {
+	  color: #fff;
+    font-weight: normal;
+}
+.scroll-top a:hover {
+	   color: #fff;
+     background: rgba(145, 219, 216, 1); /* #ed4b82! */
+}
+.navListUnit a:link,
+.navListUnit a:visited {
+  	color: #228985;
+    font-weight: normal;
+}
+
+/******** humberger icon ****/
+ .navbar-default .navbar-toggle:hover,
+ .navbar-default .navbar-toggle:focus {
+    background: #91dbd8;
+ }
+ .navbar-default .navbar-toggle .icon-bar {
+    background: #312f2e;
+}
+/******** l-header ****/
+.l-header {
+    background: transparent;
+}
+/******** l-globalNav ****/
+.navbar-nav a:link,
+.navbar-nav a:visited {
+    color: #312f2e!important; /* true */
+    text-decoration-: none;
+}
+
+/******** headerNav hover ****/
+.l-header.navbar-default .nav.navbar-nav>li>a:hover {
+    background: rgba(168, 226, 223, 1); /*  */
+}
+
+/******** l-globalNav-sub ****/
+.navbarNavUnit-sub a:link,
+.navbarNavUnit-sub a:visited {
+    background: rgba(241, 130, 91, 1)!important; /* f4825b */
+    color: #f6f6f6!important;
+    font-weight: normal;
+}
+.navbarNavUnit-sub a:hover {
+    background: rgba(241, 107, 54, 1)!important; /* f16b36 */
+}
+
+
+/******** scroll navbar bg ****/
+.l-header.is-black {
+    background: rgba(255, 255, 255, .9);
+}
+
+/******** sp tap dropdown bg ****/
+@media screen and (max-width: 1024px){
+.l-header.navbar-default .nav.navbar-nav {
+    background: rgba(255, 255, 255, .8);
+}
+}
+@media screen and (min-width:1025px){
+.navbarNavUnit-sub-special {
+    border: 1px #f6f6f6 solid;
+    padding: 13px !important;"
+}
+}
+/*    5-3.  moduleColor
+ * ------------------------------------------------------ */
+ .btn-success {
+   color: #fff;
+   background: #228985;
+   border-color: #228985;
+ }
+ .btn-success:focus,
+ .btn-success.focus {
+   color: #fff;
+   background: #76cbc9;
+   border-color: #76cbc9;
+ }
+ .btn-success:hover {
+   color: #fff;
+   background: #76cbc9;
+   border-color: #76cbc9;
+ }
+ .btn-success:active,
+ .btn-success.active,
+ .open > .dropdown-toggle.btn-success {
+   color: #fff;
+   background: #76cbc9;
+   border-color: #76cbc9;
+ }
+
+ .btn-danger {
+   color: #fff;
+   background: #f16b37;
+   border-color: #f16b37;
+ }
+ .btn-danger:focus,
+ .btn-danger.focus {
+   color: #fff;
+   background: #f4825b;
+   border-color: #f4825b;
+ }
+ .btn-danger:hover {
+   color: #fff;
+   background: #f4825b;
+   border-color: #f4825b;
+ }
+ .btn-danger:active,
+ .btn-danger.active,
+ .open > .dropdown-toggle.btn-danger {
+   color: #fff;
+   background: #f4825b;
+   border-color: #f4825b;
+ }
+ .label-success {
+   background-color: #76cbc9;
+ }
+ .label-danger {
+   background-color: #f4825b;
+ }
+/*    5-4.  ColorPlan(Color Pallet)
+ * ------------------------------------------------------ */
+ /******** 5-4-1.  backgroundColor   ****/
+.keyColor {
+   background: #76cbc9; /*  */
+}
+.keyColor20dark {
+   background: #228985; /*  */
+}
+.keyColor20pale {
+   background: #91dbd8; /*  */
+}
+.keyColor40pale {
+   background: #a8e2df; /*  */
+}
+.subColor {
+   background: #f16b36;
+}
+.subColor20dark {
+   background: #e43b24;
+}
+.subColor20pale {
+   background: #f4825b;
+}
+.subColor40pale {
+   background: #f8c2b6;
+}
+.accentColor {
+   background: #699892; /*  */
+}
+.accentColor20dark {
+   background: #4c706b; /*  */
+}
+.accentColor20pale {
+   background: #a6dcda; /* */
+}
+.accentColor40pale {
+   background: #baf9f7; /*  */
+}
+
+.wht{
+   background: #fff; /* 245, 245, 245 */
+}
+.textColor-wht{
+   color: #fff; /* 245, 245, 245 */
+}
+.gryColor {
+   background: #f1f0ee; /*  */
+}
+.gryColorTone {
+   background: #f1f0ee; /*  */
+}
+.gryColorTone2nd {
+   background: #e1d8d1; /*  */
+}
+.gryColorTone3rd{
+    background: #bdb3ac; /*  */
+}
+.gryColorTone4th {
+   background: #938c86;
+}
+/****** 記述ルール違うのでいずれボツ******/
+.keyColor-text {
+   color: #76cbc9; /*  */
+}
+.keyColor20dark-text {
+   color: #228985; /*  */
+}
+.keyColor20pale-text {
+   color: #91dbd8; /*  */
+}
+.keyColor40pale-text {
+   color: #a8e2df; /*  */
+}
+/****** 記述ルール違うのでいずれボツ******/
+/******** 5-4-2.  textColor   ****/
+.warning {
+    color: #fa3c3c;
+    font-style: normal;
+}
+.text-keyColor {
+    color: #76cbc9;
+}
+.text-keyColor20dark {
+    color: #228985;
+}
+.text-KeyColor20pale {
+    color: #91dbd8;
+}
+.text-KeyColor40pale {
+    color: #a8e2df;
+}
+.text-KeyColor60pale {
+    color: #a8e2df;
+}
+.text-subColor {
+    color: #f16b36;
+}
+.text-subColor20dark {
+    color: #e43b24;
+}
+.text-subColor20pale {
+    color: #f4825b;
+}
+.text-subColor40pale {
+    color: #f8c2b6;
+}
+.text-subColor60pale {
+    color: #f8c2b6;
+}
+.accentColor {
+    background: #699892;
+}
+.text-accentColor20dark {
+    background: #4c706b;
+}
+.text-accentColor20pale {
+    background: #a6dcda;
+}
+.text-accentColor40pale {
+    background: #baf9f7;
+}
+.text-accentColor60pale {
+    background: #baf9f7;
+}
+.text-wth {
+    color: #fff;
+}
+.text-gryColor {
+    color: #f1f0ee;
+}
+.text-gryColorTone {
+    color: #d5d5d5;
+}
+.text-gryColorTone2nd {
+   background: #e1d8d1;
+}
+.text-gryColorTone3rd {
+    background: #bdb3ac;
+}
+.text-gryColorTone4th {
+   background: #938c86;
+}
+
+
+
+
+.textSize-xs {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1025px) {
+.textSize-xs {
+    font-size: 1.2rem;
+  }
+}
+
+.textSize-xxs {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1025px) {
+.textSize-xxs {
+    font-size: 1rem;
+  }
+}
